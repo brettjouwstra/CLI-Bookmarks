@@ -25,3 +25,7 @@ Running `python main.py add https://google.com` produces the output shown
 Running with the `count` argument produces
 
 ![image2](cli-count.png)
+
+Running with the `dashboard` argument creates an HTML file that looks like this when opened
+
+![image3](cli-dashboard.png)
