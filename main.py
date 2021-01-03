@@ -12,6 +12,7 @@ from typing import Optional
 import webbrowser
 from fuzzywuzzy import fuzz, process
 import jinja2
+from tabulate import tabulate
 
 app = typer.Typer()
 
@@ -119,7 +120,10 @@ def search_tags(tag: str):
 @app.command("list", help="Lists all entries") # This over rides the usual call - which would be "collection"
 def collection():
     lookup = db.all()
-    typer.echo(lookup)
+    header = lookup[0].keys()
+    rows =  [x.values() for x in lookup]
+    output = tabulate(rows, headers=header)
+    typer.echo(output)
 
 
 @app.command("text", help="Given a string, fuzzy search the entries and return the top three results.")
