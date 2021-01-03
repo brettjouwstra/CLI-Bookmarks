@@ -20,8 +20,8 @@ Commands:
 
 Running `python main.py add https://google.com` produces the output shown
 
-!(image1)[cli-add.png]
+![image1](cli-add.png)
 
 Running with the `count` argument produces
 
-!(image2)[cli-count.png]
+![image2](cli-count.png)
