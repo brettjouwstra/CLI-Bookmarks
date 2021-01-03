@@ -18,7 +18,7 @@ Commands:
 
 ### Examples
 
-Running `python main.py add https://google.com` produces the output shown
+Running `python main.py add https://google.com` produces the output shown. Notice that after providing the URL it'll ask if you want provide any tags? If "no," just press enter and "None" will saved. 
 
 ![image1](cli-add.png)
 
@@ -26,6 +26,6 @@ Running with the `count` argument produces
 
 ![image2](cli-count.png)
 
-Running with the `dashboard` argument creates an HTML file that looks like this when opened
+Running with the `dashboard` argument creates an HTML file that looks like this when opened. You'll see that the site's favicon is shown if it was able to be discovered at the time the entry was made. 
 
 ![image3](cli-dashboard.png)
